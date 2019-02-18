@@ -33,12 +33,12 @@ $(document).ready(function() {
             contentType: false,
             cache: false,
             processData:false,
-            success: function(data){
-			  $('form#contact-form').slideUp("fast", function() {
-			  $(this).before('<div class="success">Thank you. Your Email was sent successfully.</div>');
-			  $("#loader").hide();
-			  })
-            }           
+            success: function(data) {
+              $('form#contact-form').slideUp("fast", function() {
+                $(this).before('<div class="success">Thank you. Your Email was sent successfully.</div>');
+                $("#loader").hide();
+              })
+            }
        });
 	   
 	   return false;
